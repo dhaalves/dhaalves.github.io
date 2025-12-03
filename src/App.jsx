@@ -5,7 +5,15 @@ import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, query, or
 import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from 'firebase/auth';
 
 // --- Configuração do Firebase ---
-const firebaseConfig = JSON.parse(__firebase_config);
+const firebaseConfig = {
+  apiKey: "AIzaSyAbQMDv0jK3XzIBjkv0WqQM66ua8hVzHrc",
+  authDomain: "rodrigoenbalagens-5c431.firebaseapp.com",
+  projectId: "rodrigoenbalagens-5c431",
+  storageBucket: "rodrigoenbalagens-5c431.firebasestorage.app",
+  messagingSenderId: "687713986084",
+  appId: "1:687713986084:web:9d4fd6d13073feb90c5ab1",
+  measurementId: "G-Q79VT3R0M5"
+};
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
